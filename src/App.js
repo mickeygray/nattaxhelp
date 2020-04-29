@@ -25,7 +25,8 @@ const App = () => {
    </ul>
    <br />
    <div className='card' style={{ width: "15rem" }}>
-    <form name='employee' method='post' data-netlify='true'>
+    <form name='employee' method='post'>
+     <input type='hidden' name='form-name' value='employee' />
      <label htmlFor='name'>Name</label>
      <input type='text' name='name' />
      <label htmlFor='position'>Position</label>
@@ -36,7 +37,7 @@ const App = () => {
      <input type='text' name='number' />
      <label htmlFor='name'>Email</label>
      <input type='email' name='email' />
-     <input type='submit' />
+     <button type='submit'>Send</button>
     </form>
    </div>
   </div>
