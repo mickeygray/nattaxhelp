@@ -1,30 +1,36 @@
 import React from "react";
 import "./App.css";
+import guy from "./images/images.png";
 
 const App = () => {
  return (
-  <div className='container'>
-   <h3>Are you a current or recent American Tax Solutions Employee?</h3>
-   <h4>National Tax Experts Will Hire You Directly</h4>
-   <p>
-    We are offering FULL TIME EMPLOYMENT to all current or recently terminated
-    American Tax Solutions employees with a desire to continue working in tax
-    resolution after American Tax Solutions. An opportunity to speak with HR
-    directly is guaranteed, if you are current skilled employee especially in
-    resolution a trial offer is all but guaranteed, and all employees enjoy the
-    following:{" "}
-   </p>
-   <ul>
-    <li>Above average pay</li>
-    <li>Catered lunches</li>
-    <li>Full Health Benefits</li>
-    <li>
-     A long term secure position in a company that has been around for 10 plus
-     years.
-    </li>
-   </ul>
-   <br />
-   <div className='card' style={{ width: "15rem" }}>
+  <div className='grid-consultants container'>
+   <div className='overlay'>
+    <img src={guy} alt='' className='round-img' />
+   </div>
+
+   <div className='copy-grid'>
+    <h1 className='text-primary'>
+     Are you an American Tax Solutions Employee?
+    </h1>
+    <p className='lead'> National Tax Will Hire You Today</p> We are offering
+    FULL TIME EMPLOYMENT <br />
+    to all current or recently terminated American Tax Solutions
+    <br /> employees with a desire to continue working in tax resolution
+    <br /> after American Tax Solutions.
+    <br />
+    <br />
+    <ul className='card bg-light' style={{ width: "300px" }}>
+     <li>Benefits Include</li>
+     <li>Full Health and Dental</li>
+     <li>Salary Matched or Exceeded</li>
+     <li>Catered Lunches</li>
+    </ul>
+   </div>
+
+   <div
+    className='card bg-light form-grid'
+    style={{ width: "15rem", borderRadius: "10%", height: "25rem" }}>
     <form name='employee' method='post'>
      <input type='hidden' name='form-name' value='employee' />
      <label htmlFor='name'>Name</label>
